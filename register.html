@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Dibaclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              onest: ['"Onest"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-onest text-gray-900 bg-white">
+    <div class="min-h-screen flex">
+      <!-- Left Image -->
+      <div
+        class="relative hidden md:block md:w-1/2 bg-cover bg-center"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');
+        "
+      >
+        <a
+          href="/"
+          class="absolute top-6 left-6 bg-white/70 text-[#005aab] font-semibold text-lg px-4 py-2 rounded-md shadow hover:bg-white"
+        >
+          Dibaclass
+        </a>
+      </div>
+
+      <!-- Right Form -->
+      <div class="w-full md:w-1/2 flex items-center justify-center p-8">
+        <div class="max-w-md w-full space-y-6">
+          <h2 class="text-3xl font-bold text-center text-[#005aab]">
+            Daftar Akun
+          </h2>
+          <p class="text-center text-gray-600 text-sm">
+            Mulailah mengerjakan tryoutmu!
+          </p>
+
+          <form action="#" method="POST" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium">Nama</label>
+              <input
+                type="text"
+                name="name"
+                required
+                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Telepon</label>
+              <div class="flex">
+                <span
+                  class="inline-flex items-center px-3 bg-gray-100 border border-r-0 border-gray-300 text-gray-600 rounded-l-md text-sm"
+                  >+62</span
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-r-md"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Password</label>
+              <input
+                type="password"
+                name="password"
+                required
+                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium"
+                >Konfirmasi Password</label
+              >
+              <input
+                type="password"
+                name="confirm_password"
+                required
+                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#005aab] text-white py-2 rounded-md hover:bg-[#00407f] transition"
+            >
+              Daftar
+            </button>
+          </form>
+
+          <p class="text-center text-sm text-gray-500">
+            Sudah pernah daftar?
+            <a href="/login.html" class="text-[#005aab] hover:underline"
+              >Login disini</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
