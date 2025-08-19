@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibaclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="components/header.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        onest: ['"Onest"', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-onest antialiased">
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
+                <h2 class="text-2xl font-bold text-gray-800">Riwayat Pembelian</h2>
+                <div class="flex flex-wrap gap-3">
+                    <button id="filter-waiting"
+                        class="filter-btn px-4 py-2 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 data-[active=true]:hover:bg-[#005aab]">
+                        Menunggu Pembayaran
+                    </button>
+                    <button id="filter-cancelled"
+                        class="filter-btn px-4 py-2 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 data-[active=true]:hover:bg-[#005aab]">
+                        Pembayaran Batal
+                    </button>
+                    <button id="filter-success"
+                        class="filter-btn px-4 py-2 rounded-full border border-gray-300 text-sm text-gray-700 hover:bg-gray-100 data-[active=true]:hover:bg-[#005aab]">
+                        Pembayaran Selesai
+                    </button>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto bg-white ring-1 ring-gray-900/5 sm:rounded-xl shadow-sm">
+                <table class="min-w-full divide-y divide-gray-200 text-sm">
+                    <thead class="bg-gray-50 text-gray-700">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-semibold">Paket</th>
+                            <th class="px-4 py-3 text-left font-semibold">Tanggal Beli</th>
+                            <th class="px-4 py-3 text-left font-semibold">No. Pembelian</th>
+                            <th class="px-4 py-3 text-left font-semibold">Total</th>
+                            <th class="px-4 py-3 text-left font-semibold">Status</th>
+                            <th class="px-4 py-3 text-left font-semibold">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">Paket SKD CPNS - Part 1</td>
+                            <td class="px-4 py-4 text-gray-600">Jumat, 15 Agustus 2025, 18:51:14</td>
+                            <td class="px-4 py-4 text-gray-600">1755258674</td>
+                            <td class="px-4 py-4 text-gray-600">Rp20.000</td>
+                            <td class="px-4 py-4 text-emerald-600 font-semibold">Aktif</td>
+                            <td class="px-4 py-4">
+                                <span
+                                    class="inline-flex items-center rounded-full bg-emerald-100 text-emerald-700 px-3 py-1 text-sm font-medium">Pembayaran
+                                    Selesai</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">Paket SKD CPNS - Part 1</td>
+                            <td class="px-4 py-4 text-gray-600">Jumat, 15 Agustus 2025, 18:51:14</td>
+                            <td class="px-4 py-4 text-gray-600">1755258674</td>
+                            <td class="px-4 py-4 text-gray-600">Rp20.000</td>
+                            <td class="px-4 py-4 text-emerald-600 font-semibold">Aktif</td>
+                            <td class="px-4 py-4">
+                                <span
+                                    class="inline-flex items-center rounded-full bg-emerald-100 text-emerald-700 px-3 py-1 text-sm font-medium">Pembayaran
+                                    Selesai</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">Paket SKD CPNS - Part 1</td>
+                            <td class="px-4 py-4 text-gray-600">Jumat, 15 Agustus 2025, 18:51:14</td>
+                            <td class="px-4 py-4 text-gray-600">1755258674</td>
+                            <td class="px-4 py-4 text-gray-600">Rp20.000</td>
+                            <td class="px-4 py-4 text-emerald-600 font-semibold">Aktif</td>
+                            <td class="px-4 py-4">
+                                <span
+                                    class="inline-flex items-center rounded-full bg-emerald-100 text-emerald-700 px-3 py-1 text-sm font-medium">Pembayaran
+                                    Selesai</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">Paket SKD CPNS - Part 1</td>
+                            <td class="px-4 py-4 text-gray-600">Jumat, 15 Agustus 2025, 18:51:14</td>
+                            <td class="px-4 py-4 text-gray-600">1755258674</td>
+                            <td class="px-4 py-4 text-gray-600">Rp20.000</td>
+                            <td class="px-4 py-4 text-emerald-600 font-semibold">Aktif</td>
+                            <td class="px-4 py-4">
+                                <span
+                                    class="inline-flex items-center rounded-full bg-emerald-100 text-emerald-700 px-3 py-1 text-sm font-medium">Pembayaran
+                                    Selesai</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div id="footer"></div>
+    <script src="components/footer.js"></script>
+</footer>
+
+
+</html>

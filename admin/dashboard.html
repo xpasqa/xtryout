@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dibaclass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="components/header.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            onest: ['"Onest"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-onest antialiased">
+  <div id="header"></div>
+  <section>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
+      <img src="asset/banner1.jpg" alt="Banner Dibaclass" class="w-full h-auto rounded-xl shadow-md object-cover">
+    </div>
+  </section>
+
+  <section>
+    <!-- Paket List Section -->
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#005aab] mb-2 md:mb-0">Paket Tryout Terbaru</h2>
+          <div class="flex gap-2">
+            <button
+              class="rounded-full border border-[#005aab] text-[#005aab] text-sm px-4 py-1 hover:bg-[#005aab] hover:text-white transition">Tryout
+              SKD CPNS</button>
+            <button
+              class="rounded-full border border-[#005aab] text-[#005aab] text-sm px-4 py-1 hover:bg-[#005aab] hover:text-white transition">Tryout
+              SKB CPNS</button>
+            <button
+              class="rounded-full border border-[#005aab] text-[#005aab] text-sm px-4 py-1 hover:bg-[#005aab] hover:text-white transition">Tryout
+              UTBK</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- CPNS Paket 1 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 2, 3, 4</h3>
+              <p class="text-sm text-gray-600">
+                Didesain untuk menghadapi SKD CPNS 2025: terdiri dari 3 sesi tryout lengkap TWK, TIU, dan TKP.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+                </div>
+                <a href="detail-paket.html"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- UTBK Paket 1 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 3, 4, 5</h3>
+              <p class="text-sm text-gray-600">
+                Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CPNS Paket 2 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 5, 6, 7</h3>
+              <p class="text-sm text-gray-600">
+                Paket latihan CPNS 2025 untuk sesi Part 5, 6, dan 7. Tersedia soal TWK, TIU, TKP.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- UTBK Paket 2 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 6, 7, 8</h3>
+              <p class="text-sm text-gray-600">
+                Latihan UTBK sesi Part 6, 7, dan 8. Dapatkan soal TPS &amp; TKA, pembahasan detail.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CPNS Paket 3 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 8, 9, 10</h3>
+              <p class="text-sm text-gray-600">
+                Persiapan maksimal untuk CPNS 2025 sesi Part 8, 9, dan 10. Soal tryout, pembahasan.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- UTBK Paket 3 -->
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
+              <p class="text-sm text-gray-600">
+                Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
+              <p class="text-sm text-gray-600">
+                Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
+              <p class="text-sm text-gray-600">
+                Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
+              <p class="text-sm text-gray-600">
+                Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan.
+              </p>
+              <div class="mt-4 flex items-end justify-between">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                    <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                  </div>
+                  <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+                </div>
+                <a href="#!"
+                  class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </section>
+</body>
+
+<footer>
+  <div id="footer"></div>
+  <script src="components/footer.js"></script>
+</footer>
+
+</html>

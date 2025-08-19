@@ -1,666 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dibaclass</title>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dibaclass</title>
 
-    <!-- Google Fonts: Onest -->
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Custom Font Config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              onest: ['"Onest"', 'sans-serif'],
-            },
+  <!-- Google Fonts: Onest -->
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Custom Font Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            onest: ['"Onest"', 'sans-serif'],
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    </head>
-    <body class="font-onest antialiased">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-     <!-- Header -->
-    <header class="bg-[#005aab] shadow-sm">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="asset/logo.png" alt="Dibaclass Logo" class="h-8">
-      </a>
+</head>
 
-      <!-- Desktop Navigation -->
-      <nav class="navbar sticky top-0 z-50 navbar-expand-lg navbar-color-custom hidden md:flex space-x-6 text-sm">
-        <a href="#" class="text-white hover:text-gray-200 transition">Beranda</a>
-        <a href="#" class="text-white hover:text-gray-200 transition">Paket Belajar</a>
-        <a href="#" class="text-white hover:text-gray-200 transition">Keunggulan</a>
-        <a href="#" class="text-white hover:text-gray-200 transition">Testimnoni</a>
-        <a href="#" class="text-white hover:text-gray-200 transition">Promo</a>
-          <a href="#" class="text-white hover:text-gray-200 transition">FAQ</a>
-      </nav>
+<body class="font-onest antialiased">
 
-      <!-- Mobile Toggle -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Actions -->
-      <div class="hidden md:flex items-center gap-4">
-        <a href="/register.html" class="px-4 py-2 text-sm bg-white text-orange-500 font-semibold rounded-full hover:bg-orange-600 hover:text-white transition">Daftar</a>
-        <a href="/login.html" class="px-4 py-2 text-sm bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">Masuk</a>
-      </div>
-    </div>
-
-    <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="md:hidden hidden flex-col mt-4 space-y-2 text-sm">
-  <a href="#" class="block text-white hover:text-gray-200">About</a>
-  <a href="#" class="block text-white hover:text-gray-200">Journals</a>
-  <a href="#" class="block text-white hover:text-gray-200">Topics</a>
-  <a href="#" class="block text-white hover:text-gray-200">Guidelines</a>
-  <a href="#" class="block text-white hover:text-gray-200">Blog</a>
-<div class="flex justify-between gap-2 mt-4 mb-6 pb-6">
-  <a href="/login.html" class="w-1/2 text-center px-4 py-2 text-sm text-white bg-black rounded-md hover:bg-teal-500">Login</a>
-  <a href="/register.html" class="w-1/2 text-center px-4 py-2 text-sm text-white border border-black rounded-md hover:bg-black hover:text-white">Register</a>
-</div>
-  </div>
-</header>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  });
-</script>
-
-    <!-- Hero Banner -->
-    <section class="relative h-[600px] bg-[#005aab] text-white text-left">
-  <div class="relative z-10 max-w-screen-xl mx-auto w-full h-full flex flex-col md:flex-row justify-between items-center gap-8 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-xl">
-      <h1 class="text-4xl md:text-5xl mt-20 font-bold mb-4">Belajar Bahagia, Raih Prestasi Bersama!</h1>
-      <p class="text-lg mb-6">Belajar penuh semangat, dan bikin hati senang—karena sukses itu lebih mudah dicapai saat kamu bahagia.</p>
-      <a href="/login.html" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">Mulai Belajar Sekarang</a>
-    </div>
-    <div class="ml-0 md:ml-8">
-      <img src="asset/image.png" alt="Hero Image" class="w-auto sm:w-auto md:w-72 lg:w-auto h-auto object-contain mx-auto md:mx-0 rounded-lg">
-    </div>
-  </div>
-</section>
-
-<!-- Benefits Section -->
-<section class="py-16 bg-gray-50">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center text-[#005aab] mb-2 max-w-3xl mx-auto leading-snug">
-      Peluang Lulus CPNS & UTBK Jadi Lebih Besar!
-    </h2>
-    <p class="text-lg text-gray-600 text-center mb-2 max-w-2xl mx-auto leading-relaxed">
-      Dengan soal-soal berkualitas, pembahasan detail, dan latihan intensif, Dibaclass bikin peluang kamu lolos tes jadi makin nyata.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      
-      <div class="p-6 rounded-lg">
-        <img src="asset/diba-1.png" alt="Icon" class="mx-auto">
-        <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Belajar Jadi Fun</h3>
-        <p class="text-gray-600">Super teacher yang friendly bikin materi ribet jadi gampang banget. Belajar seru!</p>
-      </div>
-      
-      <div class="p-6 rounded-lg">
-        <img src="asset/diba-2.png" alt="Icon" class="mx-auto">
-        <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Materi Selalu Fresh</h3>
-        <p class="text-gray-600">Nggak pake materi basi, selalu update sesuai kisi-kisi terbaru biar kamu nggak salah arah.</p>
-      </div>
-      
-      <div class="p-6 rounded-lg">
-        <img src="asset/diba-3.png" alt="Icon" class="mx-auto">
-        <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Try Out Seru</h3>
-        <p class="text-gray-600">Soal Tryout udah pasti lengkap sama pembahasan detail dan video biar kamu makin pede.</p>
-      </div>
-      
-      <div class="p-6 rounded-lg">
-        <img src="asset/diba-4.png" alt="Icon" class="mx-auto">
-        <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Sukses Bareng</h3>
-        <p class="text-gray-600">Belajar bareng komunitas yang selalu dukung kamu biar semangat tetap on fire!</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section>
-  
-</section>
-
-<!-- About Section -->
-<section class="py-16 bg-[#e6f0fa]">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-[#005aab] mb-4">Kenapa Harus Pilih Dibaclass?</h2>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        Dibaclass lahir dari semangat kebersamaan untuk melihat banyak pejuang sukses bersama. 
-        Kami percaya tryout dan latihan konsisten adalah kunci utama meraih prestasi. 
-        Dengan materi relevan dan komunitas belajar yang suportif, Dibaclass siap menemani perjalananmu menuju CPNS, UTBK, maupun sekolah kedinasan.
-      </p>
-    </div>
-    <div class="flex justify-center">
-      <iframe class="w-full h-64 md:h-80 rounded-lg shadow-md" src="https://www.youtube.com/embed/ujlVUpb2RDw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Paket List Section -->
-<section class="bg-gray-50 py-20">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center text-[#005aab] mb-4">Paket Tryout Terbaru</h2>
-    <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Pilih bundling paket yang dirancang khusus untuk membantumu lolos seleksi. Semua sudah dilengkapi pembahasan, analisis skor, dan latihan intensif.</p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- CPNS Paket 1 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 2, 3, 4</h3>
-          <p class="text-sm text-gray-600">
-            Didesain untuk menghadapi SKD CPNS 2025: terdiri dari 3 sesi tryout lengkap TWK, TIU, dan TKP. Bonus analisis skor, pembahasan mendalam, dan progress tracking.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
-            </div>
-            <a href="/login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- UTBK Paket 1 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 3, 4, 5</h3>
-          <p class="text-sm text-gray-600">
-            Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap dengan pembahasan, peringkat nasional, dan bisa diulang.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
-            </div>
-            <a href="/login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- CPNS Paket 2 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 5, 6, 7</h3>
-          <p class="text-sm text-gray-600">
-            Paket latihan CPNS 2025 untuk sesi Part 5, 6, dan 7. Tersedia soal TWK, TIU, TKP, analisis skor, pembahasan lengkap, dan fitur progress tracking.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
-            </div>
-            <a href="login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- UTBK Paket 2 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 6, 7, 8</h3>
-          <p class="text-sm text-gray-600">
-            Latihan UTBK sesi Part 6, 7, dan 8. Dapatkan soal TPS &amp; TKA, pembahasan detail, peringkat nasional, dan latihan yang bisa diulang sepuasnya.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
-            </div>
-            <a href="login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- CPNS Paket 3 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 8, 9, 10</h3>
-          <p class="text-sm text-gray-600">
-            Persiapan maksimal untuk CPNS 2025 sesi Part 8, 9, dan 10. Soal tryout, pembahasan, dan fitur analisis skor siap bantu kamu lolos seleksi.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
-            </div>
-            <a href="login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- UTBK Paket 3 -->
-      <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
-        <div class="aspect-[16/9] overflow-hidden">
-          <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
-        </div>
-        <div class="p-5 flex-1 flex flex-col">
-          <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
-          <p class="text-sm text-gray-600">
-            Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan, serta fitur latihan dan peringkat nasional.
-          </p>
-          <div class="mt-4 flex items-end justify-between">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
-                <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
-              </div>
-              <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
-            </div>
-            <a href="login.html" class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Testimonial Section -->
-<section class="bg-[#edf4fa] py-24 sm:py-">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-center text-[#005aab]">Apa Kata Mereka?</h2>
-    <p class="text-gray-600 text-center mt-2 mb-12 max-w-2xl mx-auto">Cerita nyata dari para pejuang CPNS &amp; UTBK yang belajar bareng Dibaclass.</p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Tryout di Dibaclass bener-bener ngasah strategi. Pembahasan jelas, ritme latihan pas, dan hasil SKD-ku naik signifikan!”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 1">
-          <div>
-            <div class="font-semibold text-gray-900">Rani Putri</div>
-            <div class="text-sm text-gray-500">Lolos SKD CPNS 2024</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Card 2 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Materinya update dan komunitasnya suportif. Aku jadi konsisten latihan dan akhirnya tembus UTBK ke kampus impian.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 2">
-          <div>
-            <div class="font-semibold text-gray-900">Dimas Saputra</div>
-            <div class="text-sm text-gray-500">Mahasiswa Baru 2024</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Card 3 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Analitik skornya detail. Aku tahu kelemahan per materi dan belajar jadi lebih terarah.”
-        </blockquote>
-      <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 3">
-          <div>
-            <div class="font-semibold text-gray-900">Anisa Rahma</div>
-            <div class="text-sm text-gray-500">Pejuang UTBK</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Card 4 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Pembahasan videonya jelas banget. Konsep yang susah jadi kebayang.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 4">
-          <div>
-            <div class="font-semibold text-gray-900">Bagus Hidayat</div>
-            <div class="text-sm text-gray-500">Peserta Tryout</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Card 5 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Mentornya responsif dan supportive. Belajar jadi konsisten dan nggak kerasa sendirian.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 5">
-          <div>
-            <div class="font-semibold text-gray-900">Putra Mahendra</div>
-            <div class="text-sm text-gray-500">CPNS Aspirant</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Card 6 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 6">
-          <div>
-            <div class="font-semibold text-gray-900">Nadia Lestari</div>
-            <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
-          </div>
-        </figcaption>
-      </figure>
-
-        <!-- Card 6 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 6">
-          <div>
-            <div class="font-semibold text-gray-900">Nadia Lestari</div>
-            <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
-          </div>
-        </figcaption>
-      </figure>
-
-        <!-- Card 6 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 6">
-          <div>
-            <div class="font-semibold text-gray-900">Nadia Lestari</div>
-            <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
-          </div>
-        </figcaption>
-      </figure>
-
-        <!-- Card 6 -->
-      <figure class="rounded-xl bg-white border border-gray-200 p-6">
-        <blockquote class="text-gray-700">
-          “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-4">
-          <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format" alt="Avatar 6">
-          <div>
-            <div class="font-semibold text-gray-900">Nadia Lestari</div>
-            <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
-          </div>
-        </figcaption>
-      </figure>
-
-      
-    </div>
-  </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="bg-white">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16 ">
-    <div class="mx-auto max-w-7xl">
-      <h2 class="text-3xl font-bold text-center text-[#005aab]">Frequently Asked Questions</h2>
-      <dl class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6" id="faq-accordion">
-        <!-- Q1 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-1" aria-expanded="false">
-              <span class="text-base font-semibold">Apa itu Dibaclass?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-1">
-            <p class="text-base text-gray-600">Dibaclass adalah platform belajar dan tryout untuk CPNS, UTBK, dan sekolah kedinasan dengan materi update, pembahasan detail, dan komunitas belajar suportif.</p>
-          </dd>
-        </div>
-        <!-- Q2 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-2" aria-expanded="false">
-              <span class="text-base font-semibold">Apa bedanya Paket Standard dan Paket Premium?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-2">
-            <p class="text-base text-gray-600">Paket Standard cocok untuk mulai latihan rutin dengan akses tryout terbatas. Paket Premium mencakup unlimited tryout, semua bank soal premium, pembahasan video, hingga mentor & grup diskusi.</p>
-          </dd>
-        </div>
-        <!-- Q3 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-3" aria-expanded="false">
-              <span class="text-base font-semibold">Apakah materi Dibaclass selalu update?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-3">
-            <p class="text-base text-gray-600">Ya. Kami rutin memperbarui materi dan soal agar sesuai kisi-kisi terbaru CPNS/UTBK dan perubahan kebijakan.</p>
-          </dd>
-        </div>
-        <!-- Q4 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-4" aria-expanded="false">
-              <span class="text-base font-semibold">Bagaimana cara mulai ikut tryout?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-4">
-            <p class="text-base text-gray-600">Daftar atau masuk ke akunmu, pilih paket, lalu kamu bisa langsung mulai tryout dari dashboard.</p>
-          </dd>
-        </div>
-        <!-- Q5 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-5" aria-expanded="false">
-              <span class="text-base font-semibold">Apakah ada laporan hasil & pembahasan?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-5">
-            <p class="text-base text-gray-600">Ada. Setiap tryout dilengkapi analitik skor, pembahasan detail, dan rekomendasi fokus belajar berikutnya.</p>
-          </dd>
-        </div>
-
-                <!-- Q5 -->
-        <div class="rounded-lg border border-gray-200 bg-white p-6">
-          <dt>
-            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-5" aria-expanded="false">
-              <span class="text-base font-semibold">Apakah ada laporan hasil & pembahasan?</span>
-              <span class="ml-6 flex h-7 items-center">
-                <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
-                <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"/></svg>
-              </span>
-            </button>
-          </dt>
-          <dd class="mt-2 pr-12 hidden" id="faq-5">
-            <p class="text-base text-gray-600">Ada. Setiap tryout dilengkapi analitik skor, pembahasan detail, dan rekomendasi fokus belajar berikutnya.</p>
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-
-<section>
-  <!-- CTA Section -->
-  <div class="relative bg-[#005aab] rounded-2xl mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 my-16 overflow-hidden shadow-lg">
-    <!-- concentric accent -->
-    <div class="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-20">
-      <svg viewBox="0 0 400 400" class="h-full w-full" fill="none">
-        <circle cx="200" cy="200" r="60" stroke="white" stroke-width="2"/>
-        <circle cx="200" cy="200" r="110" stroke="white" stroke-width="2"/>
-        <circle cx="200" cy="200" r="160" stroke="white" stroke-width="2"/>
-        <circle cx="200" cy="200" r="200" stroke="white" stroke-width="2"/>
-      </svg>
-    </div>
-
-    <div class="relative grid grid-cols-1 md:grid-cols-2 items-center">
-      <!-- Text -->
-      <div class="px-8 py-10 md:py-16 text-white">
-        <h3 class="text-4xl md:text-4xl font-bold mb-3">Gabung Sekarang!</h3>
-        <p class="text-base md:text-lg  mb-19">
-          Daftar akunmu di <span class="font-semibold">Dibaclass</span> dan nikmati pengalaman belajar yang interaktif, menyenangkan, dan penuh semangat.
-    
-        </p>
-        <a href="/login.html"
-           class="inline-block rounded-full bg-orange-600  mt-6 px-6 py-2.5 text-sm md:text-base font-semibold text-white shadow-md hover:bg-orange-800 transition">
-          Pilih Paket Belajar
+  <!-- Header -->
+  <header class="bg-[#005aab] shadow-sm">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="asset/logo.png" alt="Dibaclass Logo" class="h-8">
         </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="navbar sticky top-0 z-50 navbar-expand-lg navbar-color-custom hidden md:flex space-x-6 text-sm">
+          <a href="#" class="text-white hover:text-gray-200 transition">Beranda</a>
+          <a href="#" class="text-white hover:text-gray-200 transition">Paket Belajar</a>
+          <a href="#" class="text-white hover:text-gray-200 transition">Keunggulan</a>
+          <a href="#" class="text-white hover:text-gray-200 transition">Testimnoni</a>
+          <a href="#" class="text-white hover:text-gray-200 transition">Promo</a>
+          <a href="#" class="text-white hover:text-gray-200 transition">FAQ</a>
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Actions -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="/register.html"
+            class="px-4 py-2 text-sm bg-white text-orange-500 font-semibold rounded-full hover:bg-orange-600 hover:text-white transition">Daftar</a>
+          <a href="/login.html"
+            class="px-4 py-2 text-sm bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">Masuk</a>
+        </div>
       </div>
 
-      <!-- Image -->
-      <div class="flex justify-center md:justify-end pr-6 self-end">
-        <img src="asset/cta1.png" alt="Paket Belajar" class="object-contain max-h-full md:max-h-64 w-full drop-shadow-md"/>
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="md:hidden hidden flex-col mt-4 space-y-2 text-sm">
+        <a href="#" class="block text-white hover:text-gray-200">About</a>
+        <a href="#" class="block text-white hover:text-gray-200">Journals</a>
+        <a href="#" class="block text-white hover:text-gray-200">Topics</a>
+        <a href="#" class="block text-white hover:text-gray-200">Guidelines</a>
+        <a href="#" class="block text-white hover:text-gray-200">Blog</a>
+        <div class="flex justify-between gap-2 mt-4 mb-6 pb-6">
+          <a href="/login.html"
+            class="w-1/2 text-center px-4 py-2 text-sm text-white bg-black rounded-md hover:bg-teal-500">Login</a>
+          <a href="/register.html"
+            class="w-1/2 text-center px-4 py-2 text-sm text-white border border-black rounded-md hover:bg-black hover:text-white">Register</a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<script>
-  // Simple FAQ accordion
-  document.addEventListener('DOMContentLoaded', function () {
-    const faq = document.getElementById('faq-accordion');
-    if (!faq) return;
-    faq.querySelectorAll('button[aria-controls]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const panelId = btn.getAttribute('aria-controls');
-        const panel = document.getElementById(panelId);
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        // toggle state
-        btn.setAttribute('aria-expanded', !expanded);
-        panel.classList.toggle('hidden', expanded);
-        // toggle icons
-        const plus = btn.querySelector('.faq-plus');
-        const minus = btn.querySelector('.faq-minus');
-        if (plus && minus) { plus.classList.toggle('hidden', !expanded); minus.classList.toggle('hidden', expanded); }
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
     });
-  });
-</script>
+  </script>
 
-</section>
-
-<!-- Footer -->
-<footer class="bg-[#005aab] text-white py-12 mt-20 text-lg">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
-    
-    <!-- Logo + Description -->
-    <div class="md:col-span-2 md:pr-16">
-      <img src="/asset/logo.png" alt="Dibaclass Logo" class="mb-4 h-10">
-      <p class="leading-relaxed">
-        Penyedia layanan bimbel online untuk persiapan UTBK-SNBT, Ujian Mandiri, SKD CPNS & Kedinasan, RB BUMN, dan PPPK dengan pembelajaran berkualitas.
-      </p>
-      <div class="flex gap-4 mt-4 text-white text-lg">
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <!-- Hero Banner -->
+  <section class="relative h-[600px] bg-[#005aab] text-white text-left">
+    <div
+      class="relative z-10 max-w-screen-xl mx-auto w-full h-full flex flex-col md:flex-row justify-between items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-xl">
+        <h1 class="text-4xl md:text-5xl mt-20 font-bold mb-4">Belajar Bahagia, Raih Prestasi Bersama!</h1>
+        <p class="text-lg mb-6">Belajar penuh semangat, dan bikin hati senang—karena sukses itu lebih mudah dicapai saat
+          kamu bahagia.</p>
+        <a href="/login.html"
+          class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">Mulai
+          Belajar Sekarang</a>
+      </div>
+      <div class="ml-0 md:ml-8">
+        <img src="asset/image.png" alt="Hero Image"
+          class="w-auto sm:w-auto md:w-72 lg:w-auto h-auto object-contain mx-auto md:mx-0 rounded-lg">
       </div>
     </div>
+  </section>
 
-    <!-- Explore -->
-    <div>
-      <h4 class="font-semibold mb-4">EXPLORE</h4>
-      <ul class="space-y-3">
-        <li><a href="#" class="hover:underline">Tentang Kami</a></li>
-        <li><a href="#" class="hover:underline">Testimonials</a></li>
-        <li><a href="#" class="hover:underline">Paket Belajar</a></li>
-      </ul>
+  <!-- Benefits Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-[#005aab] mb-2 max-w-3xl mx-auto leading-snug">
+        Peluang Lulus CPNS & UTBK Jadi Lebih Besar!
+      </h2>
+      <p class="text-lg text-gray-600 text-center mb-2 max-w-2xl mx-auto leading-relaxed">
+        Dengan soal-soal berkualitas, pembahasan detail, dan latihan intensif, Dibaclass bikin peluang kamu lolos tes
+        jadi makin nyata.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+        <div class="p-6 rounded-lg">
+          <img src="asset/diba-1.png" alt="Icon" class="mx-auto">
+          <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Belajar Jadi Fun</h3>
+          <p class="text-gray-600">Super teacher yang friendly bikin materi ribet jadi gampang banget. Belajar seru!</p>
+        </div>
+
+        <div class="p-6 rounded-lg">
+          <img src="asset/diba-2.png" alt="Icon" class="mx-auto">
+          <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Materi Selalu Fresh</h3>
+          <p class="text-gray-600">Nggak pake materi basi, selalu update sesuai kisi-kisi terbaru biar kamu nggak salah
+            arah.</p>
+        </div>
+
+        <div class="p-6 rounded-lg">
+          <img src="asset/diba-3.png" alt="Icon" class="mx-auto">
+          <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Try Out Seru</h3>
+          <p class="text-gray-600">Soal Tryout udah pasti lengkap sama pembahasan detail dan video biar kamu makin pede.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-lg">
+          <img src="asset/diba-4.png" alt="Icon" class="mx-auto">
+          <h3 class="text-xl font-semibold mb-1 text-[#005aab]">Sukses Bareng</h3>
+          <p class="text-gray-600">Belajar bareng komunitas yang selalu dukung kamu biar semangat tetap on fire!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-[#e6f0fa]">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-[#005aab] mb-4">Kenapa Harus Pilih Dibaclass?</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Dibaclass lahir dari semangat kebersamaan untuk melihat banyak pejuang sukses bersama.
+          Kami percaya tryout dan latihan konsisten adalah kunci utama meraih prestasi.
+          Dengan materi relevan dan komunitas belajar yang suportif, Dibaclass siap menemani perjalananmu menuju CPNS,
+          UTBK, maupun sekolah kedinasan.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <iframe class="w-full h-64 md:h-80 rounded-lg shadow-md" src="https://www.youtube.com/embed/ujlVUpb2RDw"
+          title="YouTube video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Paket List Section -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-[#005aab] mb-4">Paket Tryout Terbaru</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Pilih bundling paket yang dirancang khusus untuk
+        membantumu lolos seleksi. Semua sudah dilengkapi pembahasan, analisis skor, dan latihan intensif.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- CPNS Paket 1 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 2, 3, 4</h3>
+            <p class="text-sm text-gray-600">
+              Didesain untuk menghadapi SKD CPNS 2025: terdiri dari 3 sesi tryout lengkap TWK, TIU, dan TKP. Bonus
+              analisis skor, pembahasan mendalam, dan progress tracking.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+              </div>
+              <a href="/login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UTBK Paket 1 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 3, 4, 5</h3>
+            <p class="text-sm text-gray-600">
+              Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap
+              dengan pembahasan, peringkat nasional, dan bisa diulang.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+              </div>
+              <a href="/login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CPNS Paket 2 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 5, 6, 7</h3>
+            <p class="text-sm text-gray-600">
+              Paket latihan CPNS 2025 untuk sesi Part 5, 6, dan 7. Tersedia soal TWK, TIU, TKP, analisis skor,
+              pembahasan lengkap, dan fitur progress tracking.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+              </div>
+              <a href="login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UTBK Paket 2 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 6, 7, 8</h3>
+            <p class="text-sm text-gray-600">
+              Latihan UTBK sesi Part 6, 7, dan 8. Dapatkan soal TPS &amp; TKA, pembahasan detail, peringkat nasional,
+              dan latihan yang bisa diulang sepuasnya.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+              </div>
+              <a href="login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CPNS Paket 3 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling CPNS" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket CPNS 2025 - Part 8, 9, 10</h3>
+            <p class="text-sm text-gray-600">
+              Persiapan maksimal untuk CPNS 2025 sesi Part 8, 9, dan 10. Soal tryout, pembahasan, dan fitur analisis
+              skor siap bantu kamu lolos seleksi.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">67%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 90.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 30.000</div>
+              </div>
+              <a href="login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UTBK Paket 3 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 9, 10, 11</h3>
+            <p class="text-sm text-gray-600">
+              Latihan intensif UTBK sesi Part 9, 10, dan 11. Dapatkan soal terbaru, pembahasan, serta fitur latihan dan
+              peringkat nasional.
+            </p>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5">65%</span>
+                  <span class="text-sm text-gray-400 line-through">Rp 80.000</span>
+                </div>
+                <div class="text-xl font-bold text-[#005aab]">Rp 28.000</div>
+              </div>
+              <a href="login.html"
+                class="inline-flex items-center justify-center rounded-full bg-[#005aab] text-white text-sm font-semibold px-4 py-2 hover:bg-[#004080]">Selengkapnya</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonial Section -->
+  <section class="bg-[#edf4fa] py-24 sm:py-">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-[#005aab]">Apa Kata Mereka?</h2>
+      <p class="text-gray-600 text-center mt-2 mb-12 max-w-2xl mx-auto">Cerita nyata dari para pejuang CPNS &amp; UTBK
+        yang belajar bareng Dibaclass.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Tryout di Dibaclass bener-bener ngasah strategi. Pembahasan jelas, ritme latihan pas, dan hasil SKD-ku naik
+            signifikan!”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 1">
+            <div>
+              <div class="font-semibold text-gray-900">Rani Putri</div>
+              <div class="text-sm text-gray-500">Lolos SKD CPNS 2024</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 2 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Materinya update dan komunitasnya suportif. Aku jadi konsisten latihan dan akhirnya tembus UTBK ke kampus
+            impian.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 2">
+            <div>
+              <div class="font-semibold text-gray-900">Dimas Saputra</div>
+              <div class="text-sm text-gray-500">Mahasiswa Baru 2024</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 3 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Analitik skornya detail. Aku tahu kelemahan per materi dan belajar jadi lebih terarah.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 3">
+            <div>
+              <div class="font-semibold text-gray-900">Anisa Rahma</div>
+              <div class="text-sm text-gray-500">Pejuang UTBK</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 4 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Pembahasan videonya jelas banget. Konsep yang susah jadi kebayang.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 4">
+            <div>
+              <div class="font-semibold text-gray-900">Bagus Hidayat</div>
+              <div class="text-sm text-gray-500">Peserta Tryout</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 5 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Mentornya responsif dan supportive. Belajar jadi konsisten dan nggak kerasa sendirian.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 5">
+            <div>
+              <div class="font-semibold text-gray-900">Putra Mahendra</div>
+              <div class="text-sm text-gray-500">CPNS Aspirant</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 6 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 6">
+            <div>
+              <div class="font-semibold text-gray-900">Nadia Lestari</div>
+              <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 6 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 6">
+            <div>
+              <div class="font-semibold text-gray-900">Nadia Lestari</div>
+              <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 6 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 6">
+            <div>
+              <div class="font-semibold text-gray-900">Nadia Lestari</div>
+              <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Card 6 -->
+        <figure class="rounded-xl bg-white border border-gray-200 p-6">
+          <blockquote class="text-gray-700">
+            “Soal-soalnya mirip pola ujian asli. Pas hari H, aku udah familiar dan lebih tenang.”
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-4">
+            <img class="h-12 w-12 rounded-full object-cover bg-gray-100"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&amp;w=256&amp;h=256&amp;fit=facearea&amp;facepad=2&amp;auto=format"
+              alt="Avatar 6">
+            <div>
+              <div class="font-semibold text-gray-900">Nadia Lestari</div>
+              <div class="text-sm text-gray-500">Lolos Sekolah Kedinasan</div>
+            </div>
+          </figcaption>
+        </figure>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16 ">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl font-bold text-center text-[#005aab]">Frequently Asked Questions</h2>
+        <dl class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6" id="faq-accordion">
+          <!-- Q1 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-1" aria-expanded="false">
+                <span class="text-base font-semibold">Apa itu Dibaclass?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-1">
+              <p class="text-base text-gray-600">Dibaclass adalah platform belajar dan tryout untuk CPNS, UTBK, dan
+                sekolah kedinasan dengan materi update, pembahasan detail, dan komunitas belajar suportif.</p>
+            </dd>
+          </div>
+          <!-- Q2 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-2" aria-expanded="false">
+                <span class="text-base font-semibold">Apa bedanya Paket Standard dan Paket Premium?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-2">
+              <p class="text-base text-gray-600">Paket Standard cocok untuk mulai latihan rutin dengan akses tryout
+                terbatas. Paket Premium mencakup unlimited tryout, semua bank soal premium, pembahasan video, hingga
+                mentor & grup diskusi.</p>
+            </dd>
+          </div>
+          <!-- Q3 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-3" aria-expanded="false">
+                <span class="text-base font-semibold">Apakah materi Dibaclass selalu update?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-3">
+              <p class="text-base text-gray-600">Ya. Kami rutin memperbarui materi dan soal agar sesuai kisi-kisi
+                terbaru CPNS/UTBK dan perubahan kebijakan.</p>
+            </dd>
+          </div>
+          <!-- Q4 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-4" aria-expanded="false">
+                <span class="text-base font-semibold">Bagaimana cara mulai ikut tryout?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-4">
+              <p class="text-base text-gray-600">Daftar atau masuk ke akunmu, pilih paket, lalu kamu bisa langsung mulai
+                tryout dari dashboard.</p>
+            </dd>
+          </div>
+          <!-- Q5 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-5" aria-expanded="false">
+                <span class="text-base font-semibold">Apakah ada laporan hasil & pembahasan?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-5">
+              <p class="text-base text-gray-600">Ada. Setiap tryout dilengkapi analitik skor, pembahasan detail, dan
+                rekomendasi fokus belajar berikutnya.</p>
+            </dd>
+          </div>
+
+          <!-- Q5 -->
+          <div class="rounded-lg border border-gray-200 bg-white p-6">
+            <dt>
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+                aria-controls="faq-5" aria-expanded="false">
+                <span class="text-base font-semibold">Apakah ada laporan hasil & pembahasan?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg class="size-6 faq-plus" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <svg class="hidden size-6 faq-minus" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12 hidden" id="faq-5">
+              <p class="text-base text-gray-600">Ada. Setiap tryout dilengkapi analitik skor, pembahasan detail, dan
+                rekomendasi fokus belajar berikutnya.</p>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <!-- CTA Section -->
+    <div
+      class="relative bg-[#005aab] rounded-2xl mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 my-16 overflow-hidden shadow-lg">
+      <!-- concentric accent -->
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-20">
+        <svg viewBox="0 0 400 400" class="h-full w-full" fill="none">
+          <circle cx="200" cy="200" r="60" stroke="white" stroke-width="2" />
+          <circle cx="200" cy="200" r="110" stroke="white" stroke-width="2" />
+          <circle cx="200" cy="200" r="160" stroke="white" stroke-width="2" />
+          <circle cx="200" cy="200" r="200" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+
+      <div class="relative grid grid-cols-1 md:grid-cols-2 items-center">
+        <!-- Text -->
+        <div class="px-8 py-10 md:py-16 text-white">
+          <h3 class="text-4xl md:text-4xl font-bold mb-3">Gabung Sekarang!</h3>
+          <p class="text-base md:text-lg  mb-19">
+            Daftar akunmu di <span class="font-semibold">Dibaclass</span> dan nikmati pengalaman belajar yang
+            interaktif, menyenangkan, dan penuh semangat.
+
+          </p>
+          <a href="/login.html"
+            class="inline-block rounded-full bg-orange-600  mt-6 px-6 py-2.5 text-sm md:text-base font-semibold text-white shadow-md hover:bg-orange-800 transition">
+            Pilih Paket Belajar
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div class="flex justify-center md:justify-end pr-6 self-end">
+          <img src="asset/cta1.png" alt="Paket Belajar"
+            class="object-contain max-h-full md:max-h-64 w-full drop-shadow-md" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple FAQ accordion
+    document.addEventListener('DOMContentLoaded', function () {
+      const faq = document.getElementById('faq-accordion');
+      if (!faq) return;
+      faq.querySelectorAll('button[aria-controls]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const panelId = btn.getAttribute('aria-controls');
+          const panel = document.getElementById(panelId);
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          // toggle state
+          btn.setAttribute('aria-expanded', !expanded);
+          panel.classList.toggle('hidden', expanded);
+          // toggle icons
+          const plus = btn.querySelector('.faq-plus');
+          const minus = btn.querySelector('.faq-minus');
+          if (plus && minus) { plus.classList.toggle('hidden', !expanded); minus.classList.toggle('hidden', expanded); }
+        });
+      });
+    });
+  </script>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#005aab] text-white py-12 mt-20 text-lg">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+
+      <!-- Logo + Description -->
+      <div class="md:col-span-2 md:pr-16">
+        <img src="/asset/logo.png" alt="Dibaclass Logo" class="mb-4 h-10">
+        <p class="leading-relaxed">
+          Penyedia layanan bimbel online untuk persiapan UTBK-SNBT, Ujian Mandiri, SKD CPNS & Kedinasan, RB BUMN, dan
+          PPPK dengan pembelajaran berkualitas.
+        </p>
+        <div class="flex gap-4 mt-4 text-white text-lg">
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h4 class="font-semibold mb-4">EXPLORE</h4>
+        <ul class="space-y-3">
+          <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="#" class="hover:underline">Testimonials</a></li>
+          <li><a href="#" class="hover:underline">Paket Belajar</a></li>
+        </ul>
+      </div>
+
+      <!-- Layanan -->
+      <div>
+        <h4 class="font-semibold mb-4">LAYANAN</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Layanan Customer 1</a></li>
+          <li><a href="#" class="hover:underline">Layanan Customer 2</a></li>
+          <li><a href="#" class="hover:underline">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Layanan -->
-    <div>
-      <h4 class="font-semibold mb-4">LAYANAN</h4>
-      <ul class="space-y-2">
-        <li><a href="#" class="hover:underline">Layanan Customer 1</a></li>
-        <li><a href="#" class="hover:underline">Layanan Customer 2</a></li>
-        <li><a href="#" class="hover:underline">Syarat & Ketentuan</a></li>
-      </ul>
+    <div class="border-t border-white mt-12 pt-6 text-center text-s">
+      © Copyright 2025, All Rights Reserved by PT Digdaya Bahagia Indonesia
     </div>
-
-  </div>
-
-  <div class="border-t border-white mt-12 pt-6 text-center text-s">
-    © Copyright 2025, All Rights Reserved by PT Digdaya Bahagia Indonesia
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

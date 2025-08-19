@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dibaclass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="components/header.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            onest: ['"Onest"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-onest antialiased">
+  <section class="bg-blue-50 py-4">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-blue-700" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2">
+          <li>
+            <a href="dashboard.html" class="hover:underline text-blue-800 font-medium">Beranda</a>
+          </li>
+          <li>
+            <svg class="w-4 h-4 text-blue-400 mx-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </li>
+          <li>
+            <a href="paket-belajar.html" class="hover:underline text-blue-800 font-medium">Paket Belajar</a>
+          </li>
+          <li>
+            <svg class="w-4 h-4 text-blue-400 mx-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </li>
+          <li class="text-blue-900 font-semibold" aria-current="page">
+            Bundling Paket UTBK 2024 Part 3,4,5
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-12 border-gray-200">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#005aab] mb-4">Bundling Paket UTBK 2024 Part 3,4,5</h2>
+          <p class="text-base text-gray-700">
+            Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap
+            dengan pembahasan, peringkat nasional, dan bisa diulang.
+          </p>
+          <p class="mt-6 text-sm text-green-700 font-medium bg-green-100 inline-block px-2 py-1 rounded-md">Aktif
+            hingga 14 Februari 2026</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/asset/cover-card.jpg" alt="Cover Paket UTBK"
+            class="rounded-lg shadow-md w-full h-auto object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- UTBK Paket 1 -->
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 3</h3>
+            <p class="text-sm text-gray-600">
+              Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap
+              dengan pembahasan, peringkat nasional, dan bisa diulang.
+            </p>
+            <div class="mt-4">
+              <a href="#!"
+                class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Mulai
+                Belajar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 4</h3>
+            <p class="text-sm text-gray-600">
+              Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap
+              dengan pembahasan, peringkat nasional, dan bisa diulang.
+            </p>
+            <div class="mt-4">
+              <a href="#!"
+                class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Mulai
+                Belajar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl border border-gray-200 overflow-hidden flex flex-col">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="/asset/cover-card.jpg" alt="Bundling UTBK" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="text-base font-semibold text-gray-900 mb-1">Bundling Paket UTBK 2025 - Part 5</h3>
+            <p class="text-sm text-gray-600">
+              Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout lengkap
+              dengan pembahasan, peringkat nasional, dan bisa diulang.
+            </p>
+            <div class="mt-4">
+              <a href="#!"
+                class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Mulai
+                Belajar</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+<footer>
+  <div id="footer"></div>
+  <script src="components/footer.js"></script>
+</footer>
+
+</html>
