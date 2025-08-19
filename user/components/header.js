@@ -4,7 +4,7 @@ const header = `
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="dashboard.html">
         <img src="asset/logo.png" alt="Dibaclass Logo" class="h-8">
       </a>
 
