@@ -58,7 +58,7 @@ const header = `
         <a href="/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
         <a href="/change-password.html" class="block text-white hover:text-gray-200 mb-2">Ganti Password</a>
         <a href="/help.html" class="block text-white hover:text-gray-200 mb-2">Bantuan</a>
-        <a href="/logout.html" class="block text-white hover:text-red-400">Keluar</a>
+        <a href="/index.html" class="block text-white hover:text-red-400">Keluar</a>
       </div>
     </div>
   </div>
