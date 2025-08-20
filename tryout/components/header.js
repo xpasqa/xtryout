@@ -10,11 +10,12 @@ const header = `
 
       <!-- Desktop Navigation -->
       <nav class="navbar sticky top-0 z-50 navbar-expand-lg navbar-color-custom hidden md:flex space-x-6 text-sm">
-        <a href="/user/dashboard.html" class="text-white hover:text-gray-200 transition">Beranda</a>
-        <a href="/user/paket-belajar.html" class="text-white hover:text-gray-200 transition">Paket Belajar</a>
-        <a href="/user/transaksi.html" class="text-white hover:text-gray-200 transition">Transaksi</a>
-        <a href="/user/transaksi.html" class="text-white hover:text-gray-200 transition">Buku</a>
-        <a href="/user/transaksi.html" class="text-white hover:text-gray-200 transition">Bantuan</a>
+        <a href="/tryout/katalog-paket-tryout.html" class="text-white hover:text-gray-200 transition">Beranda</a>
+        <a href="/tryout/paket-saya-sudah-dibeli.html" class="text-white hover:text-gray-200 transition">Paket
+          Belajar</a>
+        <a href="/tryout/transaksi.html" class="text-white hover:text-gray-200 transition">Transaksi</a>
+        <a href="/tryout/buku.html" class="text-white hover:text-gray-200 transition">Buku</a>
+        <a href="/tryout/bantuan.html" class="text-white hover:text-gray-200 transition">Bantuan</a>
       </nav>
 
       <!-- Mobile Toggle -->
@@ -47,11 +48,12 @@ const header = `
 
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="md:hidden hidden flex-col mt-4 space-y-2 text-sm">
-      <a href="/user/dashboard.html" class="block text-white hover:text-gray-200 transition">Beranda</a>
-      <a href="/user/paket-belajar.html" class="block text-white hover:text-gray-200 transition">Paket Belajar</a>
-      <a href="/user/transaksi.html" class="block text-white hover:text-gray-200 transition">Transaksi</a>
-      <a href="/user/transaksi.html" class="block text-white hover:text-gray-200 transition">Buku</a>
-      <a href="/user/transaksi.html" class="block text-white hover:text-gray-200 transition">Bantuan</a>
+      <a href="/tryout/katalog-paket-tryout.html" class="block text-white hover:text-gray-200 transition">Beranda</a>
+      <a href="/tryout/paket-saya-sudah-dibeli.html" class="block text-white hover:text-gray-200 transition">Paket
+        Belajar</a>
+      <a href="/tryout/transaksi.html" class="block text-white hover:text-gray-200 transition">Transaksi</a>
+      <a href="/tryout/buku.html" class="block text-white hover:text-gray-200 transition">Buku</a>
+      <a href="/tryout/bantuan.html" class="block text-white hover:text-gray-200 transition">Bantuan</a>
       <div class="border-t border-gray-600 mt-4 pt-4">
         <a href="/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
         <a href="/change-password.html" class="block text-white hover:text-gray-200 mb-2">Ganti Password</a>
