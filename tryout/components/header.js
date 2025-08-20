@@ -14,8 +14,6 @@ const header = `
         <a href="/tryout/paket-saya-sudah-dibeli.html" class="text-white hover:text-gray-200 transition">Paket
           Belajar</a>
         <a href="/tryout/transaksi.html" class="text-white hover:text-gray-200 transition">Transaksi</a>
-        <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
-          class="text-white hover:text-gray-200 transition">Bantuan</a>
       </nav>
 
       <!-- Mobile Toggle -->
@@ -46,20 +44,17 @@ const header = `
     </div>
 
     <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="md:hidden hidden flex-col mt-4 space-y-2 text-sm">
+    <div id="mobile-menu" class="md:hidden hidden flex-col mt-4 pb-4 space-y-2 text-sm">
       <a href="/tryout/katalog-paket-tryout.html" class="block text-white hover:text-gray-200 transition">Beranda</a>
       <a href="/tryout/paket-saya-sudah-dibeli.html" class="block text-white hover:text-gray-200 transition">Paket
         Belajar</a>
       <a href="/tryout/transaksi.html" class="block text-white hover:text-gray-200 transition">Transaksi</a>
+      <a href="/tryout/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
       <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
-        class="block text-white hover:text-gray-200 transition">Bantuan</a>
-      <div class="border-t border-gray-600 mt-4 pt-4">
-        <a href="/tryout/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
-        <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
-          class="block text-white hover:text-gray-200 mb-2">Bantuan</a>
-        <a href="/index.html" class="block text-white hover:text-red-400">Keluar</a>
-      </div>
+        class="block text-white hover:text-gray-200 mb-2">Bantuan</a>
+      <a href="/index.html" class="block text-white hover:text-red-400">Keluar</a>
     </div>
+  </div>
   </div>
 </header>
 `;
