@@ -14,8 +14,8 @@ const header = `
         <a href="/tryout/paket-saya-sudah-dibeli.html" class="text-white hover:text-gray-200 transition">Paket
           Belajar</a>
         <a href="/tryout/transaksi.html" class="text-white hover:text-gray-200 transition">Transaksi</a>
-        <a href="/tryout/buku.html" class="text-white hover:text-gray-200 transition">Buku</a>
-        <a href="/tryout/bantuan.html" class="text-white hover:text-gray-200 transition">Bantuan</a>
+        <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
+          class="text-white hover:text-gray-200 transition">Bantuan</a>
       </nav>
 
       <!-- Mobile Toggle -->
@@ -36,10 +36,9 @@ const header = `
               class="h-6 w-6 rounded-full cursor-pointer border-0 border-white">
           </button>
           <div id="avatar-dropdown" class="hidden absolute right-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50">
-            <a href="/profile.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil</a>
-            <a href="/change-password.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ganti
-              Password</a>
-            <a href="/help.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Bantuan</a>
+            <a href="/tryout/profile.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil</a>
+            <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Bantuan</a>
             <a href="/logout.html" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Keluar</a>
           </div>
         </div>
@@ -52,12 +51,12 @@ const header = `
       <a href="/tryout/paket-saya-sudah-dibeli.html" class="block text-white hover:text-gray-200 transition">Paket
         Belajar</a>
       <a href="/tryout/transaksi.html" class="block text-white hover:text-gray-200 transition">Transaksi</a>
-      <a href="/tryout/buku.html" class="block text-white hover:text-gray-200 transition">Buku</a>
-      <a href="/tryout/bantuan.html" class="block text-white hover:text-gray-200 transition">Bantuan</a>
+      <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
+        class="block text-white hover:text-gray-200 transition">Bantuan</a>
       <div class="border-t border-gray-600 mt-4 pt-4">
-        <a href="/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
-        <a href="/change-password.html" class="block text-white hover:text-gray-200 mb-2">Ganti Password</a>
-        <a href="/help.html" class="block text-white hover:text-gray-200 mb-2">Bantuan</a>
+        <a href="/tryout/profile.html" class="block text-white hover:text-gray-200 mb-2">Profil</a>
+        <a href="https://api.whatsapp.com/send?phone=6285366818947&text=Hi%2C%20Privat%20Al%20Faiz!%20Saya%20ingin%20bertanya%20nih"
+          class="block text-white hover:text-gray-200 mb-2">Bantuan</a>
         <a href="/index.html" class="block text-white hover:text-red-400">Keluar</a>
       </div>
     </div>

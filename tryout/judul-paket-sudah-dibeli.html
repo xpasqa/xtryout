@@ -92,12 +92,12 @@
               dengan pembahasan, peringkat nasional, dan bisa diulang.
             </p>
             <div class="mt-4">
-              <a href="#!"
+              <button onclick="document.getElementById('startModal').classList.remove('hidden')"
                 class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Kerjakan
-                Soal</a>
+                Soal</button>
             </div>
             <div class="mt-4">
-              <a href="#!"
+              <a href="peringkat.html"
                 class="block w-full text-center rounded-lg border border-blue-400 text-blue-500 text-sm font-semibold px-4 py-4 hover:bg-blue-50">Peringkat</a>
             </div>
           </div>
@@ -114,12 +114,12 @@
               dengan pembahasan, peringkat nasional, dan bisa diulang.
             </p>
             <div class="mt-4">
-              <a href="#!"
+              <button onclick="document.getElementById('startModal').classList.remove('hidden')"
                 class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Kerjakan
-                Soal</a>
+                Soal</button>
             </div>
             <div class="mt-4">
-              <a href="#!"
+              <a href="peringkat.html"
                 class="block w-full text-center rounded-lg border border-blue-400 text-blue-500 text-sm font-semibold px-4 py-4 hover:bg-blue-50">Peringkat</a>
             </div>
 
@@ -137,12 +137,12 @@
               dengan pembahasan, peringkat nasional, dan bisa diulang.
             </p>
             <div class="mt-4">
-              <a href="#!"
+              <button onclick="document.getElementById('startModal').classList.remove('hidden')"
                 class="block w-full text-center rounded-lg bg-[#005aab] text-white text-sm font-semibold px-4 py-4 hover:bg-[#004080]">Kerjakan
-                Soal</a>
+                Soal</button>
             </div>
             <div class="mt-4">
-              <a href="#!"
+              <a href="peringkat.html"
                 class="block w-full text-center rounded-lg border border-blue-400 text-blue-500 text-sm font-semibold px-4 py-4 hover:bg-blue-50">Peringkat</a>
             </div>
           </div>
@@ -203,6 +203,24 @@
       </div>
     </div>
   </section>
+
+  <div id="startModal" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Tata Cara Pengerjaan Tryout (TO)</h3>
+      <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+        <li>Silakan membuka website melalui browser. Disarankan menggunakan Google Chrome agar lebih optimal.</li>
+        <li>Setelah Tryout dimulai, waktu pengerjaan akan berjalan otomatis dan tidak dapat dijeda. Oleh karena itu,
+          pastikan Anda memulai pada waktu yang tepat.</li>
+        <li>Apabila waktu pengerjaan habis, sistem secara otomatis akan mengirimkan jawaban Anda.</li>
+      </ul>
+      <div class="mt-6 flex justify-end gap-3">
+        <button onclick="document.getElementById('startModal').classList.add('hidden')"
+          class="border border-[#005aab] text-[#005aab] px-4 py-2 rounded-lg text-sm hover:bg-blue-50">Batal</button>
+        <a href="#!" class="bg-[#005aab] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#004080]">Mulai
+          Sekarang</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 <footer>
