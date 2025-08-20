@@ -1,100 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Dibaclass</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              onest: ['"Onest"', "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Dibaclass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            onest: ['"Onest"', "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
-  <body class="font-onest text-gray-900 bg-white">
-    <div class="min-h-screen flex">
-      <!-- Left Image -->
-      <div
-        class="hidden md:block md:w-1/2 bg-cover bg-center"
-        style="
+      },
+    };
+  </script>
+</head>
+
+<body class="font-onest text-gray-900 bg-white">
+  <div class="min-h-screen flex">
+    <!-- Left Image -->
+    <div class="hidden md:block md:w-1/2 bg-cover bg-center" style="
           background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');
-        "
-      >
-        <a
-          href="/"
-          class="absolute top-6 left-6 bg-white/70 text-[#005aab] font-semibold text-lg px-4 py-2 rounded-md shadow hover:bg-white"
-        >
-          Dibaclass
-        </a>
-      </div>
+        ">
+      <a href="/"
+        class="absolute top-6 left-6 bg-white/70 text-[#005aab] font-semibold text-lg px-4 py-2 rounded-md shadow hover:bg-white">
+        Dibaclass
+      </a>
+    </div>
 
-      <!-- Right Form -->
-      <div class="w-full md:w-1/2 flex items-center justify-center p-8">
-        <div class="max-w-md w-full space-y-6">
-          <h2 class="text-3xl font-bold text-center text-[#005aab]">
-            Selamat Datang
-          </h2>
-          <p class="text-center text-gray-600 text-sm">
-            Masuk ke akun Dibaclass kamu
-          </p>
+    <!-- Right Form -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-8">
+      <div class="max-w-md w-full space-y-6">
+        <h2 class="text-3xl font-bold text-center text-[#005aab]">
+          Selamat Datang
+        </h2>
+        <p class="text-center text-gray-600 text-sm">
+          Masuk ke akun Dibaclass kamu
+        </p>
 
-          <form action="#" method="POST" class="space-y-4">
-            <div>
-              <label for="email" class="block text-sm font-medium"
-                >Email address</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#005aab]"
-              />
-            </div>
-
-            <div>
-              <label for="password" class="block text-sm font-medium"
-                >Password</label
-              >
-              <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#005aab]"
-              />
-            </div>
-
-            <button
-              type="submit"
-              class="w-full bg-[#005aab] text-white py-2 rounded-md hover:bg-[#00407f] transition"
-            >
-              Masuk
-            </button>
-
-            <p class="text-center text-sm text-gray-500">
-              Belum punya akun?
-              <a href="/register.html" class="text-[#005aab] hover:underline"
-                >Daftar di sini</a
-              >
-            </p>
-          </form>
-
-        
-            </button>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium">Email address</label>
+            <input type="email" id="email" name="email" required
+              class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#005aab]" />
           </div>
-        </div>
+
+          <div>
+            <label for="password" class="block text-sm font-medium">Password</label>
+            <input type="password" id="password" name="password" required
+              class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#005aab]" />
+          </div>
+
+          <a href="/tryout/katalog-paket-tryout.html"
+            class="block text-center w-full bg-[#005aab] text-white py-2 rounded-md hover:bg-[#00407f] transition">
+            Masuk
+          </a>
+
+          <p class="text-center text-sm text-gray-500">
+            Belum punya akun?
+            <a href="/register.html" class="text-[#005aab] hover:underline">Daftar di sini</a>
+          </p>
+        </form>
+
+
+        </button>
       </div>
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>
