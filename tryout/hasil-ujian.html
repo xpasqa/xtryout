@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibaclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="components/header.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        onest: ['"Onest"', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-onest antialiased">
+    <section class="bg-blue-50 py-4">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="text-sm text-blue-700" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
+                    <li>
+                        <a href="katalog-paket-tryout.html"
+                            class="hover:underline text-blue-800 font-medium">Beranda</a>
+                    </li>
+                    <li>
+                        <svg class="w-4 h-4 text-blue-400 mx-2" fill="currentColor" viewBox="0 0 20 20"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="paket-saya-sudah-dibeli.html" class="hover:underline text-blue-800 font-medium">Paket
+                            Belajar</a>
+                    </li>
+                    <li>
+                        <svg class="w-4 h-4 text-blue-400 mx-2" fill="currentColor" viewBox="0 0 20 20"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li class="text-blue-900 font-semibold" aria-current="page">
+                        Judul Paket
+                    </li>
+                    <li>
+                        <svg class="w-4 h-4 text-blue-400 mx-2" fill="currentColor" viewBox="0 0 20 20"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </li>
+                    <li class="text-blue-900 font-semibold" aria-current="page">
+                        Hasil Ujian
+                    </li>
+                </ol>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12 border-gray-200">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                <div class="flex-1">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#005aab] mb-4">Judul Paket Tryout
+                    </h2>
+                    <p class="text-base text-gray-700">
+                        Khusus untuk pejuang UTBK! Latihan TPS dan TKA dari soal-soal terkini. Tersedia 3 paket tryout
+                        lengkap
+                        dengan pembahasan, peringkat nasional, dan bisa diulang.
+                    </p>
+                    <p class="mt-6 text-sm text-green-700 font-medium bg-green-100 inline-block px-2 py-1 rounded-md">
+                        Aktif
+                        hingga 14 Februari 2026</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <img src="/asset/cover-card.jpg" alt="Cover Paket UTBK"
+                        class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white py-16">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <!-- Skor Akhir Box -->
+            <div class="bg-white p-6 text-center rounded-lg shadow border border-gray-200">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">SKOR AKHIR</h4>
+                <div class="text-4xl text-[#005aab] font-bold mb-1">305</div>
+                <div class="text-sm text-gray-700 mb-3">Passing Grade 60</div>
+                <h6 class="text-sm font-semibold text-gray-800 mb-2">Keterangan</h6>
+                <div class="inline-block bg-red-500 text-white text-sm font-semibold px-4 py-1 rounded-full">
+                    Tidak Lulus
+                </div>
+            </div>
+
+            <!-- Tabel Nilai -->
+            <div class="overflow-x-auto rounded-lg shadow ring-1 ring-gray-200">
+                <table class="min-w-full divide-y divide-gray-200 text-sm">
+                    <thead class="bg-gray-50 text-gray-700">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-semibold">Pelajaran</th>
+                            <th class="px-4 py-3 text-left font-semibold">Passing Grade</th>
+                            <th class="px-4 py-3 text-left font-semibold">Nilai Akhir</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="px-4 py-3 text-gray-800">Tes Wawasan Kebangsaan</td>
+                            <td class="px-4 py-3 text-gray-600">65</td>
+                            <td class="px-4 py-3 font-bold text-gray-900">80</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-gray-800">Tes Intelegensi Umum</td>
+                            <td class="px-4 py-3 text-gray-600">80</td>
+                            <td class="px-4 py-3 font-bold text-gray-900">70</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-gray-800">Tes Karakteristik Pribadi</td>
+                            <td class="px-4 py-3 text-gray-600">166</td>
+                            <td class="px-4 py-3 font-bold text-gray-900">155</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <a href="/tryout/ujian.html"
+                    class="w-full text-center px-6 py-3 border border-[#005aab] text-[#005aab] rounded-md font-semibold hover:bg-blue-50 transition">
+                    Ulangi Ujian
+                </a>
+                <a href="#"
+                    class="w-full text-center px-6 py-3 bg-[#005aab] text-white rounded-md font-semibold hover:bg-[#004080] transition">
+                    Pembahasan
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <div id="footer"></div>
+    <script src="components/footer.js"></script>
+</footer>
+
+</html>
