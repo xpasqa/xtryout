@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibaclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="components/header.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        onest: ['"Onest"', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body class="font-onest antialiased bg-gray-50 text-gray-800">
+    <section class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Kolom Kiri -->
+            <div class="md:w-[75%] w-full space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-lg font-bold text-gray-700 mb-2">Bundling Paket UTBK 2024 Part 3,4,5</h2>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-xl font-bold mb-4">Soal Nomor 1</h2>
+                    <p class="mb-6 text-justify">
+                        Perubahan tujuh kata dalam sila pertama Piagam Jakarta menjadi "Ketuhanan Yang Maha Esa"
+                        dilakukan menjelang pengesahan UUD 1945. Tujuan utama perubahan tersebut adalah…
+                    </p>
+
+                    <div class="space-y-4">
+                        <label class="cursor-pointer block">
+                            <input type="radio" name="jawaban" class="peer hidden" />
+                            <div class="flex items-start space-x-3 p-4 rounded-md border transition duration-150 ease-in-out
+             hover:border-black peer-checked:bg-[#005aab] peer-checked:text-white">
+                                <span class="indicator font-bold mr-2 peer-checked:text-white">A.</span>
+                                <span class="text-base">Menyelaraskan Pancasila dengan semangat toleransi umat beragama
+                                    di
+                                    Indonesia.</span>
+                            </div>
+                        </label>
+
+                        <label class="cursor-pointer block">
+                            <input type="radio" name="jawaban" class="peer hidden" />
+                            <div class="flex items-start space-x-3 p-4 rounded-md border transition duration-150 ease-in-out
+             hover:border-black peer-checked:bg-[#005aab] peer-checked:text-white">
+                                <span class="indicator font-bold mr-2 peer-checked:text-white">B.</span>
+                                <span class="text-base">Menghindari konflik antarumat beragama demi menjaga keutuhan
+                                    bangsa yang baru merdeka.</span>
+                            </div>
+                        </label>
+
+                        <label class="cursor-pointer block">
+                            <input type="radio" name="jawaban" class="peer hidden" />
+                            <div class="flex items-start space-x-3 p-4 rounded-md border transition duration-150 ease-in-out
+             hover:border-black peer-checked:bg-[#005aab] peer-checked:text-white">
+                                <span class="indicator font-bold mr-2 peer-checked:text-white">C.</span>
+                                <span class="text-base">Mengakomodasi keberagaman agama tanpa menonjolkan salah satu
+                                    golongan.</span>
+                            </div>
+                        </label>
+
+                        <label class="cursor-pointer block">
+                            <input type="radio" name="jawaban" class="peer hidden" />
+                            <div class="flex items-start space-x-3 p-4 rounded-md border transition duration-150 ease-in-out
+             hover:border-black peer-checked:bg-[#005aab] peer-checked:text-white">
+                                <span class="indicator font-bold mr-2 peer-checked:text-white">D.</span>
+                                <span class="text-base">Menyempurnakan isi Pancasila agar sejalan dengan prinsip
+                                    demokrasi
+                                    modern.</span>
+                            </div>
+                        </label>
+
+                        <label class="cursor-pointer block">
+                            <input type="radio" name="jawaban" class="peer hidden" />
+                            <div class="flex items-start space-x-3 p-4 rounded-md border transition duration-150 ease-in-out
+             hover:border-black peer-checked:bg-[#005aab] peer-checked:text-white">
+                                <span class="indicator font-bold mr-2 peer-checked:text-white">E.</span>
+                                <span class="text-base">Mengutamakan kepentingan umat mayoritas demi menjaga stabilitas
+                                    pemerintahan awal.</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="flex justify-between mt-6">
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">
+                            <i class="fas fa-chevron-left mr-2"></i>Sebelumnya
+                        </button>
+                        <button class="px-4 py-2 bg-[#005aab]  text-white rounded-md hover:bg-[#002e57]">
+                            Selanjutnya<i class="fas fa-chevron-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="md:w-[25%] w-full space-y-6">
+                <!-- Badge -->
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <h3 class="font-semibold mb-2 text-gray-700">Sisa Waktu</h3>
+                    <div class="flex justify-center gap-2">
+                        <div class="text-center bg-gray-100 px-3 py-2 rounded-md">
+                            <span id="jam" class="block text-xl font-bold text-[#005aab]">01</span>
+                            <span class="text-xs text-gray-600">Jam</span>
+                        </div>
+                        <div class="text-center bg-gray-100 px-3 py-2 rounded-md">
+                            <span id="menit" class="block text-xl font-bold text-[#005aab]">22</span>
+                            <span class="text-xs text-gray-600">Menit</span>
+                        </div>
+                        <div class="text-center bg-gray-100 px-3 py-2 rounded-md">
+                            <span id="detik" class="block text-xl font-bold text-[#005aab]">08</span>
+                            <span class="text-xs text-gray-600">Detik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akhiri Ujian Button -->
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <button
+                        class="w-full border border-[#005aab] text-[#005aab] hover:bg-red-600 hover:border-red-500 hover:text-white font-semibold py-2 px-4 rounded-md transition duration-200">
+                        Akhiri Ujian
+                    </button>
+                </div>
+
+                <!-- Question Number List -->
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <h3 class="font-semibold mb-2 text-gray-700">Daftar Soal</h3>
+                    <div class="grid grid-cols-5 gap-2 max-h-[500px] overflow-y-auto pr-1">
+                        <!-- Static Example for 1-110 -->
+                    </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const container = document.querySelector(".grid.grid-cols-5");
+                            for (let i = 1; i <= 110; i++) {
+                                const btn = document.createElement("button");
+                                btn.className = "relative text-sm font-semibold border rounded-md w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition";
+                                btn.textContent = i;
+                                if (i === 1) {
+                                    btn.classList.add("bg-[#005aab]", "text-white");
+                                }
+                                container.appendChild(btn);
+                            }
+                        });
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div id="footer"></div>
+    <script src="components/footer.js"></script>
+</footer>
+
+
+</html>

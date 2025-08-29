@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibaclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="components/header.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        onest: ['"Onest"', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body class="font-onest antialiased bg-gray-50 text-gray-800">
+    <section class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Kolom Kiri -->
+            <div class="md:w-[70%] w-full bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4">Soal Tryout</h2>
+                <p class="mb-6">
+                    Jelaskan bagaimana peran teknologi dalam meningkatkan efisiensi pembelajaran di era digital.
+                </p>
+                <label for="jawaban" class="block text-sm font-semibold mb-2">Jawaban Anda:</label>
+                <textarea id="jawaban" rows="10"
+                    class="w-full p-4 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Ketik jawabanmu di sini..."></textarea>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="md:w-[30%] w-full space-y-6">
+                <!-- Badge -->
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <h3 class="font-semibold mb-2">Badge</h3>
+                    <span
+                        class="inline-block bg-yellow-400 text-white text-xs font-medium px-3 py-1 rounded-full">Rising
+                        Star</span>
+                </div>
+
+                <!-- Level -->
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <h3 class="font-semibold mb-2">Level</h3>
+                    <p class="text-blue-600 text-lg font-bold">Level 3</p>
+                </div>
+
+                <!-- Leaderboard -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold mb-3">Leaderboard</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>🥇 Alex - 98</li>
+                        <li>🥈 Nina - 95</li>
+                        <li>🥉 Kamu - 92</li>
+                        <li>4. Budi - 89</li>
+                        <li>5. Tania - 85</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div id="footer"></div>
+    <script src="components/footer.js"></script>
+</footer>
+
+
+</html>
